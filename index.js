@@ -20,7 +20,7 @@ app.use(bodyParser.json());
 // initialize routes
 // middle ware 02
 app.use('/api',require('./routes/api'));
-app.use('/api',require('./routes/baseRoute'));
+app.use('/',require('./routes/baseRoute'));
 
 //error handling middleware
 app.use(function (err,req,res,next) {
