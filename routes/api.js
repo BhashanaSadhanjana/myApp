@@ -2,8 +2,6 @@ const express = require('express');
 const router = express.Router();
 const Clients = require('../models/clients');
 
-
-
 //get a person from the database
 router.get('/clients',function (req,res,next) {
     res.send({type: 'GET'});
