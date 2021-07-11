@@ -14,11 +14,11 @@ mongoose.connect('mongodb+srv://root:1234@myapp.yemsj.mongodb.net/bhashana?retry
 //     { useUnifiedTopology: true,useNewUrlParser: true });
  mongoose.Promise = global.Promise;
 
-//middle ware 01
+//middleware 01
 app.use(bodyParser.json());
 
 // initialize routes
-// middle ware 02
+// middleware 02
 app.use('/api',require('./routes/api'));
 app.use('/',require('./routes/baseRoute'));
 
